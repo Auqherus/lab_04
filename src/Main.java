@@ -1,16 +1,23 @@
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-//        ćw.1 napisać po kilka przykładów wypisywania tekstu w konsoli,
-//        Użyć każdej z opcji
+
+        /* ćw.5 */
+
+        /* zad.1 podziel swój wiek przez modulo 3 i jeśli twój wiek zwraca 0 wyświetl napis "Podzielny przez 3",
+         * w innym wypadku "Niepodzielny przez 3" użyj kontrukcji if else
+         * */
 
 
+        /* zad.2 użyj parametru trójargumentowego aby sprawdzić parzystośc nr. indeksu */
 
-        System.out.println("To jest przyklad nr1");
-        System.out.printf("To jest przyklad nr2");
-        System.out.println();
-        System.out.print("To jest przyklad nr3");
+
+        /* zad.3 wpisz z klawiatury liczbę zmiennoprzecinkową (użyj klasy Scanner z poprzednich ćwiczeń)
+         * i stwórz konstrukcję else if z dowolnymi komunikatami */
 
 
     }
 }
+
