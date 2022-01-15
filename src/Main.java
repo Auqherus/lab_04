@@ -1,3 +1,7 @@
+import java.sql.SQLOutput;
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -15,6 +19,28 @@ public class Main {
 
          // zad 1 a) nr indeksu 60725
 
-        for (int i = 100; i >= 0; i--) {if(i%5 == 0){System.out.println(i);}}
+        /*for (int i = 100; i >= 0; i--) {if(i%5 == 0){System.out.println(i);}}*/
+
+        //zad 2
+
+        Scanner TryMe = new Scanner(System.in);
+        System.out.println("PROGRAM TABLICA");
+        System.out.println();
+
+        int[] tab = new int [5];
+        for (int i = 0; i <tab.length ; i++) {System.out.print("Podaj"+" "+i+" "+ "liczbe :" +" ");tab[i] = TryMe.nextInt();System.out.println();}
+        System.out.println("Dane w tablicy :");
+        for (int j : tab) {System.out.println(j);}
+
+        System.out.println();
+        //sortowanie
+        System.out.println("Dane w tablicy po sortowaniu :");
+        Arrays.sort(tab);
+        for (int j : tab) {System.out.println(j);}
     }
 }
+
+
+
+
+
