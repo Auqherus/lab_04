@@ -48,7 +48,7 @@ public class Main {
         while(i<=4){System.out.println(tab[i]);i++;}*/
 
         // zad 2 b)
-        double tab [] = new double [5];
+ /*       double tab [] = new double [5];
 
         tab[0] = 34.2;
         tab[1] = 2.7;
@@ -58,6 +58,18 @@ public class Main {
         Arrays.sort(tab);
         Arrays.toString(tab);
 
+        int i = 4;
+        while(i>=0){ System.out.println(tab[i]);i--;}*/
+
+        // zad 2 c)
+        String tab [] = new String [5];
+
+        tab[0] = "Tadeusz";
+        tab[1] = "Adrian";
+        tab[2] = "Ignacy";
+        tab[3] = "Juliusz";
+        tab[4] = "Werter";
+        Arrays.sort(tab);
         int i = 4;
         while(i>=0){ System.out.println(tab[i]);i--;}
 
