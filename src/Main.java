@@ -37,6 +37,15 @@ public class Main {
         System.out.println("Dane w tablicy po sortowaniu :");
         Arrays.sort(tab);
         for (int j : tab) {System.out.println(j);}
+        System.out.println();
+
+        //foreach zwiekszone o 11
+        System.out.println("Dane w tablicy po zastosowaniu funkcji foreach i zwiekszone o 11 :");
+        for (int x: tab
+        ) {
+            System.out.println(x+11);
+
+        }
     }
 }
 
