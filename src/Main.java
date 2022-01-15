@@ -1,3 +1,7 @@
+import javax.swing.*;
+import java.util.Arrays;
+import java.util.Collections;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -25,8 +29,23 @@ public class Main {
 
         //zad 1 index = 60725
 
-        int number = 1000;
+     /*   int number = 1000;
         do {if(number%25 == 0){System.out.println("Liczba : "+" "+number+" "+"podzielna przez 25!");}number--;
-        } while(number>=0);
+        } while(number>=0);*/
+
+        //zad 2 a)
+
+        int tab [] = new int [5];
+        tab[0] = 231;
+        tab[1] = 12;
+        tab[2] = 443;
+        tab[3] = 41;
+        tab[4] = 52;
+
+        int i = 0;
+        Arrays.sort(tab);
+        Arrays.toString(tab);
+        while(i<=4){System.out.println(tab[i]);i++;}
+
     }
 }
