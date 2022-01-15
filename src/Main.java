@@ -35,7 +35,7 @@ public class Main {
 */
         //zad 2 a)
 
-        int tab [] = new int [5];
+        /*int tab [] = new int [5];
         tab[0] = 231;
         tab[1] = 12;
         tab[2] = 443;
@@ -45,7 +45,21 @@ public class Main {
         int i = 0;
         Arrays.sort(tab);
         Arrays.toString(tab);
-        while(i<=4){System.out.println(tab[i]);i++;}
+        while(i<=4){System.out.println(tab[i]);i++;}*/
+
+        // zad 2 b)
+        double tab [] = new double [5];
+
+        tab[0] = 34.2;
+        tab[1] = 2.7;
+        tab[2] = 1.3;
+        tab[3] = 6.3;
+        tab[4] = 43.2;
+        Arrays.sort(tab);
+        Arrays.toString(tab);
+
+        int i = 4;
+        while(i>=0){ System.out.println(tab[i]);i--;}
 
 
     }
