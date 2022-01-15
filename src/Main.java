@@ -1,27 +1,32 @@
-import java.util.Scanner;
-
 public class Main {
 
     public static void main(String[] args) {
 
-        /* Tablice - cw_6 */
+        /* cw.1 pętle while */
 
-        /* zad1. stworzyć tablicę typu double 5-cio elementową,
-        przypisać do niej wartości i wyświetlić */
-
-
-        double tab [] = new double[5];
-
-        tab[0] = 0;
-        tab[1] = 1;
-        tab[2] = 2;
-        tab[3] = 3;
-        tab[4] = 4;
-
-        for (double tablica : tab) System.out.println(tablica);
+        /* zad 1 - Napisać za pomocą pętli do-while kod który będzie iterował od liczby 1000 w dół do 0.
+          Jeśli liczba będzie podzielna przez 2 ostatnie cyfry waszego indeksu (podać nr indesu z uczelni)
+          to dać komunikat "liczba XX podzielna przez YY" (XX-liczba podzielna YY-podzielnik)
+        */
 
 
+        /* zad 2
+        a) stworzyć tablicę typu int wielkosci 5, przypisac jej dowolne wartości,
+          przeiterować tablicę po elementach i wyswietlić, użyć pętli while
+        b) jak wyżej tylko dla tablicy typu double[],
+        c) jak wyżej dla tablicy String[], przeiterować i wyświetlić od ostatniego elementu
+        */
+
+        /* zad.3
+        a) sprawdzić jak zachowuje się pętla while gdy w jej warunku damy true --> while(true)
+        b) a jak gdy damy false --> while(false)
+        */
 
 
+        //zad 1 index = 60725
+
+        int number = 1000;
+        do {if(number%25 == 0){System.out.println("Liczba : "+" "+number+" "+"podzielna przez 25!");}number--;
+        } while(number>=0);
     }
 }
