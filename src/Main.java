@@ -1,55 +1,29 @@
 import java.sql.SQLOutput;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
 
+    private static int[] tablica;
+
     public static void main(String[] args) {
 
-        /* ćw.2 pętle for */
+        /* ćwiczenie 3 switch case */
 
-        /* zad.1 Napisz program który będzie iterował od 100 do 0,
-         *  i wyświetlał liczby które są podzielne przez ostatnią cyfrę waszego indeksu
-         * (jesli tą liczbą jest 0 to przez 2 ostatnie) */
+        /* zad.1 napisać program który przyjmuje jedną liczbę od użytkownika z klawiatury
+          i za pomocą switch case default ma określić czy:
+          a) ta liczba jest parzysta --> podpowiedz switch(a % 2) {
+          b) program który określi czy liczba jest podzielna przez 7
+         */
 
+        /* zad.2
+           a) napisać program podobny do programu z przykładu, który ma zliczyć iloś liter 'o', 'p', 'x', 'z', 'q' w wyrazie:
+            "ooooozjoonoxoooozoooooooooozoxooooopnpppoooiiooooomnzooooxoqoojoozoootyoooozoooxoooozooooxooooooojoooopxoooonnmooo"
+           b) oraz ma określić ile jest pozostałych liter, które nie należą do: 'o', 'p', 'x', 'z', 'q'
+         */
 
-        /* zad.2 Napisz program który będzie uzupełniał tablicę 5-cio elementową int[] liczbami
-         * wprowadzanymi z klawiatury (użyć klasy Scanner), a następnie będzie wyświetlał elementy tablicy
-         * za pomocą pętli forEach powiększone o 11 */
-
-         // zad 1 a) nr indeksu 60725
-
-        /*for (int i = 100; i >= 0; i--) {if(i%5 == 0){System.out.println(i);}}*/
-
-        //zad 2
-
+        //zad 1
         Scanner TryMe = new Scanner(System.in);
-        System.out.println("PROGRAM TABLICA");
-        System.out.println();
-
-        int[] tab = new int [5];
-        for (int i = 0; i <tab.length ; i++) {System.out.print("Podaj"+" "+i+" "+ "liczbe :" +" ");tab[i] = TryMe.nextInt();System.out.println();}
-        System.out.println("Dane w tablicy :");
-        for (int j : tab) {System.out.println(j);}
-
-        System.out.println();
-        //sortowanie
-        System.out.println("Dane w tablicy po sortowaniu :");
-        Arrays.sort(tab);
-        for (int j : tab) {System.out.println(j);}
-        System.out.println();
-
-        //foreach zwiekszone o 11
-        System.out.println("Dane w tablicy po zastosowaniu funkcji foreach i zwiekszone o 11 :");
-        for (int x: tab
-        ) {
-            System.out.println(x+11);
-
-        }
+        System.out.print("Podaj liczbe: " + " "); int a = TryMe.nextInt();
+        switch (a % 2) {case 0 -> System.out.println("Liczba parzysta!");case 1 -> System.out.println("Nieparzysta!");}
     }
 }
-
-
-
-
-
