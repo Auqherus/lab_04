@@ -28,6 +28,18 @@ public class Main {
 
 
 
+        // zad 3 a)
+    /*    String tab [] = new String [5];
+
+        tab[0] = "Tadeusz";
+        tab[1] = "Adrian";
+        tab[2] = "Ignacy";
+        tab[3] = "Juliusz";
+        tab[4] = "Werter";
+        Arrays.sort(tab);
+        int i = 4;
+        while(true)
+        { System.out.println(tab[i]);i--;} // dzialanie zawsze prawdziwe*/
         // zad 3 b)
         String tab [] = new String [5];
 
