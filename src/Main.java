@@ -45,9 +45,9 @@ public class Main {
    /*     System.out.print("Podaj wielkosc tablicy :" +" ");
         Metoda2(TryMe.nextInt());*/
 
-        //zad 3 a)
-        System.out.print("Podaj imie:"+" ");
-        Metoda3(TryMe.next());
+        //zad 3 b)
+        System.out.print("Podaj imie i nazwisko:"+" ");
+        Metoda3(TryMe.next(), TryMe.next());
     }
  /* *//*  static Scanner TryMe = new Scanner(System.in);
     int c = TryMe.nextInt();
@@ -73,8 +73,7 @@ public class Main {
 
     static Scanner  TryMe = new Scanner(System.in);
 
-    public static void Metoda3(String imie){System.out.print("Imię to :"+" "+imie);}
-
+    public static void Metoda3(String imie, String nazwisko){System.out.print("Imię to :"+" "+imie+" "+"Nazwisko to :"+" "+nazwisko);}
 }
 
 /*
