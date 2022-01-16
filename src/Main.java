@@ -1,6 +1,3 @@
-import java.math.BigDecimal;
-import java.math.BigInteger;
-import java.sql.SQLOutput;
 import java.util.*;
 
 public class Main {
@@ -28,7 +25,7 @@ public class Main {
 
 
 
-        List<String>list1 = new ArrayList<>();
+       /* List<String>list1 = new ArrayList<>();
 
         Scanner TryMe = new Scanner(System.in);
         System.out.print("Podaj wielkosc listy:"+" ");
@@ -38,7 +35,10 @@ public class Main {
             list1.add(TryMe.next());
         }
 
-        System.out.println(list1);
+        System.out.println(list1);*/
+
+        Metoda M1 = new Metoda();
+        M1.getInf();
 
 
 
@@ -116,5 +116,27 @@ public class Main {
 
         }
 
+class Metoda{
+    List<String>list1 = new ArrayList<>();
+    String a;
+    public Metoda(){
+
+    }
+
+    public void getInf(){
+
+        Scanner TryMe = new Scanner(System.in);
+        System.out.print("Podaj wielkosc listy:"+" ");
+        int c = TryMe.nextInt();
+        for (int i = 0; i < c; i++) {
+            System.out.print("Podaj nazwe"+" "+(i+1)+" "+"zwierzecia:"+" ");
+            list1.add(TryMe.next());
+        }
+        for (String zmienna:list1) {
+            System.out.println(zmienna);
+        }
 
 
+
+    }
+}
