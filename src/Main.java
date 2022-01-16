@@ -53,7 +53,6 @@ public class Main {
        /* System.out.println("Podaj 2 liczby, by obliczyc sume!");
         Metoda4(TryMe.nextInt(), TryMe.nextInt());*/
 
-
         Scanner TryMe = new Scanner(System.in);
         System.out.println("Podaj Dwie Liczby, oddzielajac je Enterem :");
         Test T1 = new Test(TryMe.nextInt(), TryMe.nextInt());T1.getInf();
