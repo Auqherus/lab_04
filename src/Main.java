@@ -37,6 +37,7 @@ public class Main {
         c) wyświetlić sumę wywołań obu metod ---> print("wynik: " + (metoda(8, 9) + metoda(2, 3, 4));
         */
 
+        // zad1
         int [] tab = new int[20];
         for (int i = 0; i <tab.length ; i++) {tab[i] = i+21;System.out.println(tab[i]);}
     }
