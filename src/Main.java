@@ -54,8 +54,14 @@ public class Main {
         Metoda4(TryMe.nextInt(), TryMe.nextInt());*/
 
         Scanner TryMe = new Scanner(System.in);
-        System.out.println("Podaj Trzy Liczby, oddzielajac je Enterem :");
-        Test T1 = new Test(TryMe.nextInt(), TryMe.nextInt(), TryMe.nextInt());T1.getInf();
+        System.out.println("1. Podaj Trzy Liczby, oddzielajac je Enterem :");
+        Test T1 = new Test(TryMe.nextInt(), TryMe.nextInt(), TryMe.nextInt());
+        T1.getInf();
+        System.out.println("2. Podaj Dwie Liczby, oddzielajac je Enterem :");
+        Test T2 = new Test(TryMe.nextInt(), TryMe.nextInt());
+        T2.getInf1();
+        System.out.print("Suma dwóch działań:"+" ");
+        System.out.println(T1.getSuma()+T2.getSuma());
     }
  /* *//*  static Scanner TryMe = new Scanner(System.in);
     int c = TryMe.nextInt();
@@ -90,20 +96,31 @@ public class Main {
     public static void Metoda4(int a, int b){
 
         System.out.println("SUMA :"+" "+(a+b));
-
-
-
     }*/
 }
 
 class  Test{
+    int suma;
     int a,b,c;
+    public Test(int a, int b){
+        this.a = a;this.b = b;
+        suma = (this.a + this.b +c);
+    }
     public Test(int a, int b, int c){
         this.a = a;this.b = b;this.c = c;
+        suma = (this.a + this.b + this.c);
     }
 
     public  void getInf(){
-        System.out.println("A:"+" "+a);System.out.println("B:"+" "+b);System.out.println("C:"+" "+c);System.out.println("SUMA :"+" "+(a+b+c));
+        System.out.println("A:"+" "+a);System.out.println("B:"+" "+b);System.out.println("C:"+" "+c);System.out.println("SUMA :"+" "+suma);
+
     }
+    public  void getInf1(){
+        System.out.println("A:"+" "+a);System.out.println("B:"+" "+b);System.out.println("SUMA :"+" "+suma);
+    }
+    public int getSuma(){
+        return suma;
+    }
+
 
 }
