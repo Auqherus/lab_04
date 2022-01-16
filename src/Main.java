@@ -126,16 +126,33 @@ class Metoda{
     public void getInf(){
 
         Scanner TryMe = new Scanner(System.in);
-        System.out.print("Podaj wielkosc listy:"+" ");
-        int c = TryMe.nextInt();
-        for (int i = 0; i < c; i++) {
+        /*System.out.print("Podaj wielkosc listy:"+" ");
+        int c = TryMe.nextInt();*/
+        for (int i = 0; i < 6; i++) {
             System.out.print("Podaj nazwe"+" "+(i+1)+" "+"zwierzecia:"+" ");
             list1.add(TryMe.next());
+
         }
+        System.out.println();
+        list1.remove(3);
+        list1.remove(4);
+
+
         for (String zmienna:list1) {
-            System.out.println(zmienna);
+
+            System.out.println("Nazwa"+" "+"zwierzecia:"+" "+zmienna);
+
         }
 
+        list1.add("Koliber");
+        list1.add("Rosomak");
+        System.out.println();
+        for (String zmienna:list1) {
+
+            System.out.println("Nazwa"+" "+"zwierzecia:"+" "+zmienna);
+
+        }
+        System.out.println("Wielkosc listy :"+" "+list1.size());
 
 
     }
