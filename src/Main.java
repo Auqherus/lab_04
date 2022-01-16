@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
 
@@ -38,7 +39,24 @@ public class Main {
         */
 
         // zad1
+    /*Metoda1 zad1 = new Metoda1();*/
+        System.out.print("Podaj wielkosc tablicy :" +" ");
+        Metoda1(TryMe.nextInt());
+
+    }
+    static Scanner TryMe = new Scanner(System.in);
+    int c = TryMe.nextInt();
+
+    public static int [] Metoda1(int c){int [] tab = new int[c];for (int i = 0; i <tab.length ; i++) {tab[i] = i+21;System.out.println(tab[i]);}
+        return tab;
+    }
+}
+
+/*
+class Metoda1{
+    public Metoda1(){
         int [] tab = new int[20];
         for (int i = 0; i <tab.length ; i++) {tab[i] = i+21;System.out.println(tab[i]);}
     }
-}
+
+}*/
