@@ -1,126 +1,120 @@
+import java.math.BigDecimal;
+import java.math.BigInteger;
 import java.sql.SQLOutput;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
 
     public static void main(String[] args) {
-        /* ćwiczenie 5 Metody */
 
-        /* zad.1
-        a) stworzyć tablicę typu int[20],
-        b) napisać metodę która będzie uzupełniała tablicę wartościami od 40 do 21,
-        c) napisać metodę, która wypisze otrzymane wartości,
-        d) wstawić wywołanie metody do metody main
-        */
+        /* ćw_6 Listy */
 
-        /* zad.2
-        a) stworzyc tablicę typu String[6],
-        b) napisać metodę która uzupełni tablicę wartościami podawanymi z klawiatury
-            (użyć do tego pętli i klasy Scanner),
-        c) napisać metodę która wyświetli elementy tablicy od ostatniego elementu do elementu o indeksie 0,
-        */
+        /* zad.1 a) Napisać program który stworzy listę ArrayList<String> (lista tablicowa),
+                Proszę dane wprowadzać z klawiatury (można użyć pętli), lista ma mieć przynajmniej 5
+                elementów i elementami mają być nazwy zwierząt.
+                b) proszę stworzyć metodę która będzie miała pętle forEach i będzie wyświetlała elementy Listy
+                -- podpowiedź: for(String zmienna : List<String>)
+                c) proszę usunąć 2 ostatnie elementy listy i dodać do niej 3 inne elementy,
+                następnie wyświetlić listę i wielkość listy,
+                d) następnie proszę wykonać odwrotne sortowanie i znów użyć metody z punktu b) do wyświetlenia
+                elementów listy
+          */
 
-        /* zad.3
-        a) napisać metodę która przyjmuje 1 parametr typu String, metoda nic nie zwraca, tylko
-            wyświetla w konsoli string który ma być waszym imieniem,
-        b) napisać metodę o tej samej nazwie jak w punkcie a) z 2-oma parametrami typu String, która wyświetli
-            wasze imie i nazwisko,
-        c) napisać metodę o tej samej nazwie jak w punkcie a) i b) która przyjmuje wasze imie,
-            nazwisko i wiek (int), a następnie wszystko wyświetli,
-        */
 
-        /* zad.4
-        a) napisać metodę która przyjmuje 2 parametry typu int i zwraca ich sumę, którą przypiszemy do zmiennej,
-            coś takiego:                                    zmiennaA = metoda(1, 2); <-- wywołanie metody
-        b) napisać metodę (nazwa ta sama co w punkcie a) która przyjmuje 3 parametry typu int i zwraca ich sumę,
-            którą przypiszemy do zmiennej, coś takiego:     zmiennaB = metoda(7, 8, 9); <-- wywołanie metody
-        c) wyświetlić sumę wywołań obu metod ---> print("wynik: " + (metoda(8, 9) + metoda(2, 3, 4));
-        */
+         /* zad.2 Napisać program który stworzy Set<Integer> i wprowadzamy 10 liczb z klawiatury
+                niech liczby się powtarzają, proszę posortować a następnie wyświetlić zawartość set-a w konsoli
+                 a następnie przeiterować i wyświetlić forEach-em (jak wyżej)
+         */
 
-        // zad1
-    /*Metoda1 zad1 = new Metoda1();*/
-    /*    System.out.print("Podaj wielkosc tablicy :" +" ");
-        Metoda1(TryMe.nextInt());*/
 
-        //zad 2
-   /*     System.out.print("Podaj wielkosc tablicy :" +" ");
-        Metoda2(TryMe.nextInt());*/
 
-        //zad 3 c)
-       /* System.out.print("Podaj imie, nazwisko oraz wiek:"+" ");
-        Metoda3(TryMe.next(), TryMe.next(), TryMe.nextInt());*/
-
-       /* System.out.println("Podaj 2 liczby, by obliczyc sume!");
-        Metoda4(TryMe.nextInt(), TryMe.nextInt());*/
+        List<String>list1 = new ArrayList<>();
 
         Scanner TryMe = new Scanner(System.in);
-        System.out.println("1. Podaj Trzy Liczby, oddzielajac je Enterem :");
-        Test T1 = new Test(TryMe.nextInt(), TryMe.nextInt(), TryMe.nextInt());
-        T1.getInf();
-        System.out.println("2. Podaj Dwie Liczby, oddzielajac je Enterem :");
-        Test T2 = new Test(TryMe.nextInt(), TryMe.nextInt());
-        T2.getInf1();
-        System.out.print("Suma dwóch działań:"+" ");
-        System.out.println(T1.getSuma()+T2.getSuma());
-    }
- /* *//*  static Scanner TryMe = new Scanner(System.in);
-    int c = TryMe.nextInt();
+        System.out.print("Podaj wielkosc listy:"+" ");
+        int c = TryMe.nextInt();
+        for (int i = 0; i < c; i++) {
+            System.out.print("Podaj nazwe"+" "+(i+1)+" "+"zwierzecia:"+" ");
+            list1.add(TryMe.next());
+        }
 
-    public static int [] Metoda1(int c){int [] tab = new int[c];for (int i = 0; i <tab.length ; i++) {tab[i] = i+21;System.out.println(tab[i]);}
-        return tab;
-    }*/
-  /*static Scanner TryMe = new Scanner(System.in);
-    static Scanner TryMe2 = new Scanner(System.in);
-
-    int c = TryMe.nextInt();
-    public static String[] Metoda2(int c) {
-        String[] tab2 = new String[c];
-        System.out.println("Podaj liste imion:" +" ");
-        System.out.println();
-        for (int i = 0; i < tab2.length; i++) {tab2[i] = TryMe2.next();}
-        System.out.println();
-        System.out.println("Lista imion:"+" ");
-        System.out.println();
-        for (int i = 0; i < tab2.length; i++) {System.out.println("Nr"+" "+(i+1)+" "+tab2[i]);}
-        return tab2;
-    }*/
-
-  /*  static Scanner TryMe = new Scanner(System.in);
-
-    public static void Metoda3(String imie, String nazwisko,int age){System.out.println("Imię to :"+" "+imie);
-        System.out.println("Nazwisko to :"+" "+nazwisko);System.out.println("Wiek to :"+" "+age);}*/
-
-    /*static Scanner TryMe = new Scanner(System.in);
+        System.out.println(list1);
 
 
-    public static void Metoda4(int a, int b){
 
-        System.out.println("SUMA :"+" "+(a+b));
-    }*/
-}
+    /*    *//* Przyklad_6 Listy
+           operują na typach objektowych *//*
+                List<Integer> lista1 = new ArrayList<>();
+                List<BigInteger> lista2 = new ArrayList<>();
+                List<String> lista3 = new ArrayList<>();
+                List<BigDecimal> lista4 = new ArrayList<>();
+                List<Character> lista5 = new ArrayList<>(); // objektowy char
+                List<Object> lista6 = new ArrayList<>();
 
-class  Test{
-    int suma;
-    int a,b,c;
-    public Test(int a, int b){
-        this.a = a;this.b = b;
-        suma = (this.a + this.b +c);
-    }
-    public Test(int a, int b, int c){
-        this.a = a;this.b = b;this.c = c;
-        suma = (this.a + this.b + this.c);
-    }
+                *//* przypisanie wartości *//*
+                lista1.add(1);
+                lista1.add(5);
+                lista1.add(12);
+                lista1.add(3);
+                lista1.add(7);
+                lista1.add(9);
+                lista1.add(2);
+                System.out.println(lista1 + ", wielkość listy - " + lista1.size()); // [1, 5, 12, 3, 7, 9, 2]
 
-    public  void getInf(){
-        System.out.println("A:"+" "+a);System.out.println("B:"+" "+b);System.out.println("C:"+" "+c);System.out.println("SUMA :"+" "+suma);
+                *//* iterowanie za pomocą forEach i for *//*
+                for (Integer x : lista1) {
+                    System.out.print(x + ", ");
+                }
+                System.out.println();
 
-    }
-    public  void getInf1(){
-        System.out.println("A:"+" "+a);System.out.println("B:"+" "+b);System.out.println("SUMA :"+" "+suma);
-    }
-    public int getSuma(){
-        return suma;
-    }
+                for (int i = lista1.size() - 1; i >= 0; i--) {
+                    System.out.print(lista1.get(i) * 13 + ", ");
+                }
+
+                System.out.println("\n");
+
+                *//* odczytanie wartości elementu *//*
+                System.out.println("Pierwszy element: " + lista1.get(0) +
+                        "\nDrugi element listy: " + lista1.get(1));
+
+                *//* usówanie wartości, element o indeksie 2 został usunięty z listy *//*
+                lista1.remove(2);
+                System.out.println(lista1 + ", wielkość listy - " + lista1.size()); // [1, 5, 3, 7, 9, 2]
+
+                *//* stworzenie listy z tablicy *//*
+                Integer[] tablica1 = new Integer[]{1, 5, 6, 8, 90, 3};
+                lista1 = Arrays.stream(tablica1).toList();
+                System.out.println(lista1); // [1, 5, 6, 8, 90, 3]
+
+                *//* dynamiczna inicjalizacja listy *//*
+                lista1 = Arrays.asList(1, 4, 6, 9, 8, 3, 2);
+                System.out.println(lista1); // [1, 4, 6, 9, 8, 3, 2]
+
+                *//* Sortowanie *//*
+                Collections.sort(lista1);
+                System.out.println(lista1); // [1, 2, 3, 4, 6, 8, 9]
+
+                *//* Sortowanie od końca *//*
+                Collections.sort(lista1, Collections.reverseOrder());
+                System.out.println(lista1); // [9, 8, 6, 4, 3, 2, 1]
 
 
-}
+                *//* Przykład tworzenia Set-a *//*
+                Set<String> imiona = new TreeSet<>();
+                imiona.add("Kasia");
+                imiona.add("Ania");
+                imiona.add("Ania");
+                imiona.add("Wojtek");
+                imiona.add("Zuza");
+                imiona.add("Zuza");
+
+                System.out.println("imiona: " + imiona); // [Ania, Kasia, Wojtek, Zuza]
+                System.out.println(imiona.size()); // 4*/
+
+
+            }
+
+        }
+
+
+
