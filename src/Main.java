@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -40,16 +38,35 @@ public class Main {
 
         // zad1
     /*Metoda1 zad1 = new Metoda1();*/
-        System.out.print("Podaj wielkosc tablicy :" +" ");
-        Metoda1(TryMe.nextInt());
+    /*    System.out.print("Podaj wielkosc tablicy :" +" ");
+        Metoda1(TryMe.nextInt());*/
 
+        //zad 2
+        System.out.print("Podaj wielkosc tablicy :" +" ");
+        Metoda2(TryMe.nextInt());
     }
-    static Scanner TryMe = new Scanner(System.in);
+ /* *//*  static Scanner TryMe = new Scanner(System.in);
     int c = TryMe.nextInt();
 
     public static int [] Metoda1(int c){int [] tab = new int[c];for (int i = 0; i <tab.length ; i++) {tab[i] = i+21;System.out.println(tab[i]);}
         return tab;
+    }*/
+  static Scanner TryMe = new Scanner(System.in);
+    static Scanner TryMe2 = new Scanner(System.in);
+
+    int c = TryMe.nextInt();
+    public static String[] Metoda2(int c) {
+        String[] tab2 = new String[c];
+        System.out.println("Podaj liste imion:" +" ");
+        System.out.println();
+        for (int i = 0; i < tab2.length; i++) {tab2[i] = TryMe2.next();}
+        System.out.println();
+        System.out.println("Lista imion:"+" ");
+        System.out.println();
+        for (int i = 0; i < tab2.length; i++) {System.out.println("Nr"+" "+(i+1)+" "+tab2[i]);}
+        return tab2;
     }
+
 }
 
 /*
