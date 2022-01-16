@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
@@ -46,8 +47,16 @@ public class Main {
         Metoda2(TryMe.nextInt());*/
 
         //zad 3 c)
-        System.out.print("Podaj imie, nazwisko oraz wiek:"+" ");
-        Metoda3(TryMe.next(), TryMe.next(), TryMe.nextInt());
+       /* System.out.print("Podaj imie, nazwisko oraz wiek:"+" ");
+        Metoda3(TryMe.next(), TryMe.next(), TryMe.nextInt());*/
+
+       /* System.out.println("Podaj 2 liczby, by obliczyc sume!");
+        Metoda4(TryMe.nextInt(), TryMe.nextInt());*/
+
+
+        Scanner TryMe = new Scanner(System.in);
+        System.out.println("Podaj Dwie Liczby, oddzielajac je Enterem :");
+        Test T1 = new Test(TryMe.nextInt(), TryMe.nextInt());T1.getInf();
     }
  /* *//*  static Scanner TryMe = new Scanner(System.in);
     int c = TryMe.nextInt();
@@ -71,17 +80,31 @@ public class Main {
         return tab2;
     }*/
 
-    static Scanner TryMe = new Scanner(System.in);
+  /*  static Scanner TryMe = new Scanner(System.in);
 
     public static void Metoda3(String imie, String nazwisko,int age){System.out.println("Imię to :"+" "+imie);
-        System.out.println("Nazwisko to :"+" "+nazwisko);System.out.println("Wiek to :"+" "+age);}
+        System.out.println("Nazwisko to :"+" "+nazwisko);System.out.println("Wiek to :"+" "+age);}*/
+
+    /*static Scanner TryMe = new Scanner(System.in);
+
+
+    public static void Metoda4(int a, int b){
+
+        System.out.println("SUMA :"+" "+(a+b));
+
+
+
+    }*/
 }
 
-/*
-class Metoda1{
-    public Metoda1(){
-        int [] tab = new int[20];
-        for (int i = 0; i <tab.length ; i++) {tab[i] = i+21;System.out.println(tab[i]);}
+class  Test{
+    int a,b;
+    public Test(int a, int b){
+        this.a = a;this.b = b;
     }
 
-}*/
+    public  void getInf(){
+        System.out.println("A:"+" "+a);System.out.println("B:"+" "+b);System.out.println("SUMA :"+" "+(a+b));
+    }
+
+}
