@@ -42,8 +42,12 @@ public class Main {
         Metoda1(TryMe.nextInt());*/
 
         //zad 2
-        System.out.print("Podaj wielkosc tablicy :" +" ");
-        Metoda2(TryMe.nextInt());
+   /*     System.out.print("Podaj wielkosc tablicy :" +" ");
+        Metoda2(TryMe.nextInt());*/
+
+        //zad 3 a)
+        System.out.print("Podaj imie:"+" ");
+        Metoda3(TryMe.next());
     }
  /* *//*  static Scanner TryMe = new Scanner(System.in);
     int c = TryMe.nextInt();
@@ -51,7 +55,7 @@ public class Main {
     public static int [] Metoda1(int c){int [] tab = new int[c];for (int i = 0; i <tab.length ; i++) {tab[i] = i+21;System.out.println(tab[i]);}
         return tab;
     }*/
-  static Scanner TryMe = new Scanner(System.in);
+  /*static Scanner TryMe = new Scanner(System.in);
     static Scanner TryMe2 = new Scanner(System.in);
 
     int c = TryMe.nextInt();
@@ -65,7 +69,11 @@ public class Main {
         System.out.println();
         for (int i = 0; i < tab2.length; i++) {System.out.println("Nr"+" "+(i+1)+" "+tab2[i]);}
         return tab2;
-    }
+    }*/
+
+    static Scanner  TryMe = new Scanner(System.in);
+
+    public static void Metoda3(String imie){System.out.print("Imię to :"+" "+imie);}
 
 }
 
