@@ -134,8 +134,8 @@ class Metoda{
 
         }
         System.out.println();
-        list1.remove(3);
-        list1.remove(4);
+        /*list1.remove(3);
+        list1.remove(4);*/
 
 
         for (String zmienna:list1) {
@@ -144,8 +144,8 @@ class Metoda{
 
         }
 
-        list1.add("Koliber");
-        list1.add("Rosomak");
+       /* list1.add("Koliber");
+        list1.add("Rosomak");*/
         System.out.println();
         for (String zmienna:list1) {
 
@@ -153,6 +153,15 @@ class Metoda{
 
         }
         System.out.println("Wielkosc listy :"+" "+list1.size());
+        System.out.println();
+        System.out.println("Lista po sortowaniu :");
+        Collections.sort(list1,Collections.reverseOrder());
+        System.out.println();
+        for (String zmienna:list1) {
+
+            System.out.println("Nazwa"+" "+"zwierzecia:"+" "+zmienna);
+
+        }
 
 
     }
