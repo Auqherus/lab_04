@@ -54,8 +54,8 @@ public class Main {
         Metoda4(TryMe.nextInt(), TryMe.nextInt());*/
 
         Scanner TryMe = new Scanner(System.in);
-        System.out.println("Podaj Dwie Liczby, oddzielajac je Enterem :");
-        Test T1 = new Test(TryMe.nextInt(), TryMe.nextInt());T1.getInf();
+        System.out.println("Podaj Trzy Liczby, oddzielajac je Enterem :");
+        Test T1 = new Test(TryMe.nextInt(), TryMe.nextInt(), TryMe.nextInt());T1.getInf();
     }
  /* *//*  static Scanner TryMe = new Scanner(System.in);
     int c = TryMe.nextInt();
@@ -97,13 +97,13 @@ public class Main {
 }
 
 class  Test{
-    int a,b;
-    public Test(int a, int b){
-        this.a = a;this.b = b;
+    int a,b,c;
+    public Test(int a, int b, int c){
+        this.a = a;this.b = b;this.c = c;
     }
 
     public  void getInf(){
-        System.out.println("A:"+" "+a);System.out.println("B:"+" "+b);System.out.println("SUMA :"+" "+(a+b));
+        System.out.println("A:"+" "+a);System.out.println("B:"+" "+b);System.out.println("C:"+" "+c);System.out.println("SUMA :"+" "+(a+b+c));
     }
 
 }
