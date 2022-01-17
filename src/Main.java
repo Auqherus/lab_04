@@ -20,28 +20,62 @@ public class Main {
         /* statusy i wybór ze switch case to najczęstsze użycia enumów, enumy są często używane
          * w różnego rodzaju listach, selectach jako krótkie opcje wyboru np. jako status A, X (Aktualny, Usunięty) */
 
+        Colors kolor1 = new Colors();
+
+
 
         Scanner TryMe = new Scanner(System.in);
         while(true){
-
             int c = TryMe.nextInt();
-
-
-            if(c == 0){
-                System.out.println("Koniec programu");
-                break;
+            switch (c) {
+                case (1) -> {
+                    System.out.println(Colors.LiczbyEnum.Jeden);
+                    System.out.println(Colors.StatusEnum.Kontynuujemy);
+                    continue;
+                }
+                case (2) -> {
+                    System.out.println(Colors.LiczbyEnum.Dwa);
+                    System.out.println(Colors.StatusEnum.Kontynuujemy);
+                    continue;
+                }
+                case (3) -> {
+                    System.out.println(Colors.LiczbyEnum.Trzy);
+                    System.out.println(Colors.StatusEnum.Kontynuujemy);
+                    continue;
+                }
+                case (4) -> {
+                    System.out.println(Colors.LiczbyEnum.Cztery);
+                    System.out.println(Colors.StatusEnum.Kontynuujemy);
+                    continue;
+                }
+                case (5) -> {
+                    System.out.println(Colors.LiczbyEnum.Piec);
+                    System.out.println(Colors.StatusEnum.Kontynuujemy);
+                    continue;
+                }
+                case (6) -> {
+                    System.out.println(Colors.LiczbyEnum.Szesc);
+                    System.out.println(Colors.StatusEnum.Kontynuujemy);
+                    continue;
+                }
+                default -> System.out.println(Colors.StatusEnum.Liczba_spoza_zakresu);
             }
 
+            if(c == 0){System.out.println(Colors.StatusEnum.Koniec_programu);break;}
         }
 
 
     }
 }
- // zad 1 a)
-enum LiczbyEnum {
-    Jeden, Dwa, Trzy, Cztery, Pięć, Sześć
-}
- //zad 1 b)
-enum StatusEnum {
-    Kontynuujemy, Koniec
+
+class Colors {
+    // zad 1 a)
+    enum LiczbyEnum {
+        Jeden, Dwa, Trzy, Cztery, Piec, Szesc
+    }
+    //zad 1 b)
+    enum StatusEnum {
+        Kontynuujemy, Koniec_programu, Liczba_spoza_zakresu
+    }
+
 }
