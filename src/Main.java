@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+
 public class Main {
 
     public static void main(String[] args) {
@@ -19,14 +20,21 @@ public class Main {
             e) wywołać metody suma i róznica (obie wersje) z klasy punkt
         */
 
+        Punkt punktA= new Punkt(7);
+        punktA.metoda1();
+        System.out.println(punktA.toString()); // Nie rozumiem, czmu tutaj toString, skoro wartosc jest int
+
     }
 }
 
-class PunktA {
+class Punkt {
 
-    PunktA punkt = new PunktA(7);
+
+
+
     private final int px;
-    public PunktA(int px){
+
+    public Punkt(int px){
         this.px = px;
     }
 
@@ -35,7 +43,7 @@ class PunktA {
     }
 
     public void metoda1(){
-        System.out.println(punkt.toString());
+        System.out.println(getPx());
     }
 
 }
