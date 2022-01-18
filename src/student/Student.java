@@ -11,7 +11,7 @@ public class Student {
         this.question = question;
     }
 
-    public int getA() {
+    public int getAge() {
         return a;
     }
 
@@ -27,8 +27,12 @@ public class Student {
         return question;
     }
 
-    public void getInfo(){
+    public boolean getInfo(){
         System.out.println("Imie :"+" "+getName());
+        System.out.println("Nazwisko :"+" "+getSurname());
+        System.out.println("Wiek :"+" "+getAge());
+        System.out.println("Zaliczenie :"+" "+isQuestion());
         System.out.println();
+        return true;
     }
 }

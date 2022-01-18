@@ -10,9 +10,27 @@ public class Main {
     public static void main(String[] args) {
 
 
+        Student [] diary = new Student[3];
+        Student s1 = new Student("Endriu","John",21,true);
+        Student s2 = new Student("Arek","Wess",22,false);
+        Student s3 = new Student("Marcin","Kostowski",23,true);
 
-        Student s1 = new Student("Endriu","John",10,true);
+        diary[0] = s1;
+        diary[1] = s2;
+        diary[2] = s3;
+
+        /*for (int i = 0; i <diary.length; i++) {
+            System.out.println(diary[i].getInfo());
+        }*/
+        for (Student spr: diary) {
+
+            System.out.println(spr.getInfo());
+        }
+
+     /*
         s1.getInfo();
+        s2.getInfo();
+        s3.getInfo();*/
 
         /* ćw 2 klasy */
         /* zad.1
@@ -23,4 +41,12 @@ public class Main {
             d) dane powinny być estetycznie przedstawione
          */
     }
+}
+class Tab {
+
+    public Tab(){
+
+    }
+
+
 }
