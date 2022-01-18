@@ -1,8 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
-
 public class Main {
 
     public static void main(String[] args) {
@@ -19,20 +17,20 @@ public class Main {
             d) wypisać wartości pól (za pomocą getterów),
             e) wywołać metody suma i róznica (obie wersje) z klasy punkt
         */
-
-        Punkt punktA= new Punkt(7);
+        /*Scanner TryMe = new Scanner(System.in);
+        Punkt punktA= new Punkt(TryMe.nextInt());*/ // wartosc wpisywana z klawiatury
+        Punkt punktA= new Punkt(7); // wartosc stala
         punktA.metoda1();
-        System.out.println(punktA.toString()); // Nie rozumiem, czmu tutaj toString, skoro wartosc jest int
-
+        /*System.out.println(punktA.toString());*/ // Nie rozumiem, czmu tutaj toString, skoro wartosc jest int
+        punktA.setPx(20);
+        punktA.metoda1();
+        punktA.suma();
+        punktA.roznica();
     }
 }
 
 class Punkt {
-
-
-
-
-    private final int px;
+    private  int px;
 
     public Punkt(int px){
         this.px = px;
@@ -42,8 +40,18 @@ class Punkt {
         return px;
     }
 
+    public void setPx(int px) {
+        this.px = px;
+    }
+
     public void metoda1(){
         System.out.println(getPx());
+    }
+    public void suma(){
+        System.out.println("Suma :"+" "+(px+getPx()));
+    }
+    public void roznica(){
+        System.out.println("Roznica :"+" "+(px-getPx()));
     }
 
 }
