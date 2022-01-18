@@ -1,5 +1,10 @@
 package osoba;
+import student.Student;
 import wydzial.Wydzial;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Osoba  {
 
     private String imie;
@@ -39,8 +44,10 @@ public class Osoba  {
         this.index = index;
     }
 
+
+
     public boolean getInfo(){
-        System.out.println();
+        System.out.println("********************************");
         System.out.println("Imie :"+" "+getImie());
         System.out.println("Nazwisko :"+" "+getNazwisko());
         System.out.println("Nr Indeksu :"+" "+getIndex());

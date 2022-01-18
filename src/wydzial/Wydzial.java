@@ -1,8 +1,11 @@
 package wydzial;
 
-public class Wydzial {
+import osoba.Osoba;
+
+public class Wydzial extends Osoba {
 
     public enum wydzialEnum{
         Pierwszy, Drugi, Trzeci
     }
+
 }

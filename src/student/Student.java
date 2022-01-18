@@ -19,6 +19,10 @@ public class Student extends Osoba {
         return age;
     }
 
+    public void setAge(int age) {
+        this.age = age;
+    }
+
     @Override
     public boolean getInfo() {
         super.getInfo();
