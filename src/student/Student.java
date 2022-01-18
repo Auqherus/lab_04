@@ -1,6 +1,5 @@
 package student;
 import osoba.Osoba;
-import wydzial.Wydzial;
 
 public class Student extends Osoba {
 
@@ -21,11 +20,13 @@ public class Student extends Osoba {
     }
 
     @Override
-    public void getInfo() {
+    public boolean getInfo() {
         super.getInfo();
         if(getAge() == 0){
-            return;
+            return false;
         }
         System.out.println("Wiek :"+" "+getAge());
+
+        return true;
     }
 }

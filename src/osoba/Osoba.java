@@ -1,5 +1,4 @@
 package osoba;
-import student.Student;
 import wydzial.Wydzial;
 public class Osoba  {
 
@@ -40,14 +39,13 @@ public class Osoba  {
         this.index = index;
     }
 
-    public void getInfo(){
+    public boolean getInfo(){
         System.out.println();
         System.out.println("Imie :"+" "+getImie());
         System.out.println("Nazwisko :"+" "+getNazwisko());
         System.out.println("Nr Indeksu :"+" "+getIndex());
         System.out.println("Wydzial:"+" "+Wydzial.wydzialEnum.Pierwszy);
 
-
-
+        return true;
     }
 }
