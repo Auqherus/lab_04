@@ -27,12 +27,12 @@ public class Student {
         return question;
     }
 
-    public boolean getInfo(){
+    public void getInfo(){
         System.out.println("Imie :"+" "+getName());
         System.out.println("Nazwisko :"+" "+getSurname());
         System.out.println("Wiek :"+" "+getAge());
         System.out.println("Zaliczenie :"+" "+isQuestion());
         System.out.println();
-        return true;
+
     }
 }
