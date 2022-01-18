@@ -1,4 +1,5 @@
 import osoba.Osoba;
+import student.Student;
 
 public class Main {
 
@@ -29,10 +30,12 @@ public class Main {
             c) przeiterować listę za pomocą pętli forEach wywołując na każdym objekcie metodę toString() (w każdej iteracji);
          */
 
-        Osoba os1 = new Osoba("Piotr","Arecki",15);
 
-        os1.getInfo();
+        Student s1 = new Student("Adrian","Kwietniewski",20);
+        Student s2 = new Student("Adrian","Kwietniewski",20,22);
 
+        s1.getInfo();
+        s2.getInfo();
     }
 }
 

@@ -1,38 +1,31 @@
 package student;
+import osoba.Osoba;
+import wydzial.Wydzial;
 
-public class Student {
-    private final int  a;
-    private final String name,surname;
-    private final boolean question;
-    public Student(String name,String surname, int a, boolean question){
-        this.name = name;
-        this.surname = surname;
-        this.a = a;
-        this.question = question;
+public class Student extends Osoba {
+
+    private int age;
+
+    public Student(String imie,String nazwisko, Integer index){
+        super(imie, nazwisko, index);
+    }
+
+    public Student(String imie,String nazwisko, Integer index, int age){
+
+    super(imie, nazwisko, index);
+    this.age = age;
     }
 
     public int getAge() {
-        return a;
+        return age;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public String getSurname() {
-        return surname;
-    }
-
-    public boolean isQuestion() {
-        return question;
-    }
-
-    public void getInfo(){
-        System.out.println("Imie :"+" "+getName());
-        System.out.println("Nazwisko :"+" "+getSurname());
+    @Override
+    public void getInfo() {
+        super.getInfo();
+        if(getAge() == 0){
+            return;
+        }
         System.out.println("Wiek :"+" "+getAge());
-        System.out.println("Zaliczenie :"+" "+isQuestion());
-        System.out.println();
-
     }
 }
