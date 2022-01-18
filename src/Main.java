@@ -32,7 +32,7 @@ public class Main {
 
 
         Student s1 = new Student("Adrian","Kwietniewski",20);
-        Student s2 = new Student("Adrian","Kwietniewski",20,22);
+        Student s2 = new Student("Marek","Strozik",14,22);
 
         s1.getInfo();
         s2.getInfo();
