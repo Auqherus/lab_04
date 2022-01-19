@@ -31,7 +31,7 @@ public class Main {
 
         Budynek.Dom dom1 = new Budynek.Dom(125.3,"Dolne Migowo 23B",11,2,3);
 
-        System.out.println(dom1); // zrozumialem, po co bylo toString w poprzednich cwiczeniach ;)
+        System.out.println(dom1); // zrozumialem, po co bylo toString(); w poprzednich cwiczeniach ;)
 
 
     }
@@ -139,7 +139,7 @@ interface Budynek {
 
         @Override
         public String toString() {
-            return "Adres:"+" "+getAdres()+" "+"\n"
+            return  "\n"+"Adres:"+" "+getAdres()+" "+"\n"
                     +"Powierzchnia:"+" "+getPow()+"m^2"+"\n"+"Liczba okien:"+" "+getValue()+"\n"
                     +"Liczba anten Satelitarnych:"+" "+getAntenaSAT()+"\n"+"Liczba anten LTE:"+" "+getAntenaLTE();
         }
