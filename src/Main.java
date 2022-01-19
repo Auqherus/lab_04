@@ -36,7 +36,7 @@ interface Budynek {
     int liczbaOkien(int value);
     void liczbaMieszkancow(int value);
     void kolorDomu(KolorEnum kolor);
-    int oknaBudynku(int oknaMale, int oknaDuze);
+    int oknaBudynku(int oknaMale, int oknaDuze); // wlasna metoda z dwoma parametrami
 
     enum KolorEnum{
         Niebieski, Czerwony, Czarny, Zielony
