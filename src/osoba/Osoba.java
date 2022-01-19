@@ -1,23 +1,19 @@
 package osoba;
-import student.Student;
-import wydzial.Wydzial;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public class Osoba  {
+public abstract class Osoba {
 
     private String imie;
     private String nazwisko;
     private Integer index;
 
-    public Osoba (){
+    public Osoba() {
 
     }
-    public Osoba(String imie, String nazwisko, Integer index){
-    this.imie = imie;
-    this.nazwisko = nazwisko;
-    this.index = index;
+
+    public Osoba(String imie, String nazwisko, Integer index) {
+        this.imie = imie;
+        this.nazwisko = nazwisko;
+        this.index = index;
     }
 
     public String getImie() {
@@ -45,14 +41,5 @@ public class Osoba  {
     }
 
 
-
-    public boolean getInfo(){
-        System.out.println("********************************");
-        System.out.println("Imie :"+" "+getImie());
-        System.out.println("Nazwisko :"+" "+getNazwisko());
-        System.out.println("Nr Indeksu :"+" "+getIndex());
-        System.out.println("Wydzial:"+" "+Wydzial.wydzialEnum.Pierwszy);
-
-        return true;
-    }
+    abstract public String getInfo();
 }

@@ -1,3 +1,4 @@
+import osoba.Osoba;
 import student.Student;
 import java.util.stream.IntStream;
 import java.util.ArrayList;
@@ -21,27 +22,33 @@ public class Main {
 
         // Wykonujac zadania z cw 4 zrobilem w sumie przy okazji cw 5, wiec je daje do grupy
 
+        Osoba o1 = new Student("Geralt", "Wiedzminowski",38,234);
 
         Student s1 = new Student("Adrian","Kwietniewski",20);
         Student s2 = new Student("Marek","Strozik",14,22);
         Student s3 = new Student("Karol","Slawski",17,21);
         Student s4 = new Student("Wiktor","Krum",11,19);
         Student s5 = new Student("Oliwier","Maskowski",15,23);
-        List<Student> list1 = new ArrayList<>();
+
+        List<Student> list1 = new ArrayList<>(); // stworzenie tablicy
         list1.add(s1);
         list1.add(s2);
         list1.add(s3);
         list1.add(s4);
         list1.add(s5);
 
-        IntStream.range(0, 5).mapToObj(i -> list1.get(i).getInfo()).forEach(System.out::println);
+        for (Student nowy : list1) {System.out.println(nowy.getInfo());} //pierwsza lista
+
         System.out.println("<<======================PO ZMIANIE STUDENTOW========================>>");
         s1.setImie("Tomek");s1.setNazwisko("Marowski");s1.setIndex(33);s1.setAge(24);
         s2.setImie("Kevin");s1.setNazwisko("Ackoski");s2.setIndex(4);s2.setAge(0);
         s3.setImie("Bartek");s1.setNazwisko("Rajtak");s3.setIndex(8);s3.setAge(19);
         s4.setImie("Filip");s1.setNazwisko("Wazowski");s4.setIndex(42);s4.setAge(18);
         s5.setImie("Eugieniusz");s1.setNazwisko("Cieskalowski");s5.setIndex(2);s5.setAge(32);
-        IntStream.range(0, 5).mapToObj(i -> list1.get(i).getInfo()).forEach(System.out::println);
+
+        for (Student nowy : list1) {System.out.println(nowy.getInfo());} //lista po setterach
+
+
 
     }
 }
