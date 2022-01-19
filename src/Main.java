@@ -30,9 +30,27 @@ public class Main {
         */
 
         Budynek.Dom dom1 = new Budynek.Dom(125.3,"Dolne Migowo 23B",11,2,3);
-
+        Budynek.Dom dom2 = new Budynek.Dom(225.3,"Gorskie Sniegi 12 C",22,4,1);
+        System.out.println("DOM 1");
         System.out.println(dom1); // zrozumialem, po co bylo toString(); w poprzednich cwiczeniach ;)
-
+        dom1.setPow(132.4);
+        dom1.setAdres("Gdanska 15G");
+        dom1.setValue(14);
+        dom1.setAntenaSAT(1);
+        dom1.setAntenaLTE(3);
+        System.out.println();
+        System.out.println("Po zmianach:");
+        System.out.println(dom1); // po zmianach
+        System.out.println("DOM 2");
+        System.out.println(dom2);
+        dom2.setPow(252.4);
+        dom2.setAdres("Warszawska  73/2G");
+        dom2.setValue(18);
+        dom2.setAntenaSAT(5);
+        dom2.setAntenaLTE(2);
+        System.out.println();
+        System.out.println("Po zmianach:");
+        System.out.println(dom2);
 
     }
 }
@@ -141,7 +159,7 @@ interface Budynek {
         public String toString() {
             return  "\n"+"Adres:"+" "+getAdres()+" "+"\n"
                     +"Powierzchnia:"+" "+getPow()+"m^2"+"\n"+"Liczba okien:"+" "+getValue()+"\n"
-                    +"Liczba anten Satelitarnych:"+" "+getAntenaSAT()+"\n"+"Liczba anten LTE:"+" "+getAntenaLTE();
+                    +"Liczba anten Satelitarnych:"+" "+getAntenaSAT()+"\n"+"Liczba anten LTE:"+" "+getAntenaLTE()+"\n";
         }
     }
 
