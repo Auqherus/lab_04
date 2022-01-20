@@ -1,3 +1,6 @@
+import czlowiek1.Czlowiek1;
+import student1.Student1;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -34,6 +37,10 @@ public class Main {
         Stworzyć klasę która będzie implementować 2 lub 3 interfejsy następnie będzie
         dziedziczona przez inną klasę
         */
+
+        Student1.Student s1 = new Student1.Student();
+
+
     }
 }
 
