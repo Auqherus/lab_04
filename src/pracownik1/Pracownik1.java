@@ -3,89 +3,101 @@ package pracownik1;
 import czlowiek1.Czlowiek1;
 
 public interface Pracownik1 extends Czlowiek1 {
-    public double wyplata(double salary);
-    public String lataPracy(String experience);
-    public String stanowisko(String position);
+     double wyplata(double salary);
 
-}
+     String lataPracy(String experience);
 
-class Pracownik implements Pracownik1{
+     String stanowisko(String position);
 
 
-    private double height,salary;
-    private String eyeColor,experience,position;
+    class Pracownik implements Pracownik1 {
+        private double height, salary, experience;
+        private String eyeColor,position;
 
-    public double getHeight() {
-        return height;
-    }
+        public Pracownik() {
 
-    public void setHeight(double height) {
-        this.height = height;
-    }
+        }
 
-    public double getSalary() {
-        return salary;
-    }
+        public Pracownik(double height, double salary, String eyeColor, double experience, String position) {
+            this.height = height;
+            this.salary = salary;
+            this.eyeColor = eyeColor;
+            this.experience = experience;
+            this.position = position;
+        }
 
-    public void setSalary(double salary) {
-        this.salary = salary;
-    }
+        public double getHeight() {
+            return height;
+        }
 
-    public String getEyeColor() {
-        return eyeColor;
-    }
+        public void setHeight(double height) {
+            this.height = height;
+        }
 
-    public void setEyeColor(String eyeColor) {
-        this.eyeColor = eyeColor;
-    }
+        public double getSalary() {
+            return salary;
+        }
 
-    public String getExperience() {
-        return experience;
-    }
+        public void setSalary(double salary) {
+            this.salary = salary;
+        }
 
-    public void setExperience(String experience) {
-        this.experience = experience;
-    }
+        public String getEyeColor() {
+            return eyeColor;
+        }
 
-    public String getPosition() {
-        return position;
-    }
+        public void setEyeColor(String eyeColor) {
+            this.eyeColor = eyeColor;
+        }
 
-    public void setPosition(String position) {
-        this.position = position;
-    }
+        public double getExperience() {
+            return experience;
+        }
 
-    @Override
-    public void wzrost(double height) {
-    }
+        public void setExperience(double experience) {
+            this.experience = experience;
+        }
 
-    @Override
-    public void kolorOczu(String eyeColor) {
-    }
+        public String getPosition() {
+            return position;
+        }
 
-    @Override
-    public double wyplata(double salary) {
-        return salary;
-    }
+        public void setPosition(String position) {
+            this.position = position;
+        }
 
-    @Override
-    public String lataPracy(String experience) {
-        return experience;
-    }
+        @Override
+        public void wzrost(double height) {
+        }
 
-    @Override
-    public String stanowisko(String position) {
-        return position;
-    }
+        @Override
+        public void kolorOczu(String eyeColor) {
+        }
 
-    @Override
-    public String toString() {
-        return "Pracownik{" +
-                "Wzrost =" + height +
-                ", Wypłata =" + salary +
-                ", Kolor oczu ='" + eyeColor + '\'' +
-                ", Doświadczenie ='" + experience + '\'' +
-                ", Stanowisko =  '" + position + '\'' +
-                '}';
+        @Override
+        public double wyplata(double salary) {
+            return salary;
+        }
+
+        @Override
+        public String lataPracy(String experience) {
+            return experience;
+        }
+
+        @Override
+        public String stanowisko(String position) {
+            return position;
+        }
+
+        @Override
+        public String toString() {
+            return "Pracownik{" +
+                    "Wzrost =" + getHeight() +
+                    ", Wypłata =" + getSalary() +
+                    ", Kolor oczu ='" + getEyeColor() + '\'' +
+                    ", Doświadczenie ='" + getExperience()+" "+"lat" + '\'' +
+                    ", Stanowisko =  '" + getPosition() + '\'' +
+                    '}'+"\n";
+        }
     }
 }

@@ -1,5 +1,8 @@
-import czlowiek1.Czlowiek1;
+
+
+import pracownik1.Pracownik1;
 import student1.Student1;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -38,8 +41,16 @@ public class Main {
         dziedziczona przez inną klasę
         */
 
-        Student1.Student s1 = new Student1.Student();
+        Student1.Student s1 = new Student1.Student(24,175,14,"Niebieski","Adam");
+        Student1.Student s2 = new Student1.Student(21,183,11,"Brazowy","Tomek");
 
+        Pracownik1.Pracownik p1 = new Pracownik1.Pracownik(177,4456.56,"Szare",8,"Brygadzista");
+        Pracownik1.Pracownik p2 = new Pracownik1.Pracownik(175,3456.6,"Zielone",5,"Technik");
+
+        System.out.println(s1);
+        System.out.println(s2);
+        System.out.println(p1);
+        System.out.println(p2);
 
     }
 }

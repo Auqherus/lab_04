@@ -4,15 +4,26 @@ import czlowiek1.Czlowiek1;
 
 public interface Student1 extends Czlowiek1 {
 
-    public void nrIndeksu(int indexNr);
-    public void imie(String name);
-    public void wiek(int age);
+    void nrIndeksu(int indexNr);
+    void imie(String name);
+    void wiek(int age);
 
 
 class Student implements Student1{
     private int age;
     private double height,indexNr;
     private String eyeColor,name;
+
+    public Student(){
+
+    }
+    public Student(int age,double height, double indexNr, String eyeColor, String name) {
+        this.age = age;
+        this.height = height;
+        this.indexNr = indexNr;
+        this.eyeColor = eyeColor;
+        this.name = name;
+    }
 
 
     public int getAge() {
@@ -78,18 +89,13 @@ class Student implements Student1{
     @Override
     public String toString() {
         return "Student{" +
-                "Wiek =" + age +
-                ", Wzrost =" + height +
-                ", Numer indeksu =" + indexNr +
-                ", Kolor oczu ='" + eyeColor + '\'' +
-                ", Imie ='" + name + '\'' +
-                '}';
+                "Wiek = " + getAge() +
+                ", Wzrost = " + getHeight() +
+                ", Numer indeksu = " + getIndexNr() +
+                ", Kolor oczu = '" + getEyeColor() + '\'' +
+                ", Imie = '" + getName() + '\'' +
+                '}'+"\n";
     }
 }
-
-
-
-
-
 }
 

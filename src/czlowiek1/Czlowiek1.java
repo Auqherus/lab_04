@@ -1,11 +1,9 @@
 package czlowiek1;
 
 
-
-
  public interface Czlowiek1 {
 
-    public void wzrost(double height);
-    public void kolorOczu(String eyeColor);
+     void wzrost(double height);
+     void kolorOczu(String eyeColor);
 
  }
