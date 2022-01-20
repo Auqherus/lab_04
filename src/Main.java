@@ -1,7 +1,11 @@
 
 
+import kierownik.Kierownik;
 import pracownik1.Pracownik1;
 import student1.Student1;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class Main {
@@ -41,16 +45,38 @@ public class Main {
         dziedziczona przez inną klasę
         */
 
+        List<Pracownik1> listaPracownikow = new ArrayList<>();
+
+
         Student1.Student s1 = new Student1.Student(24,175,14,"Niebieski","Adam");
         Student1.Student s2 = new Student1.Student(21,183,11,"Brazowy","Tomek");
 
         Pracownik1.Pracownik p1 = new Pracownik1.Pracownik(177,4456.56,"Szare",8,"Brygadzista");
         Pracownik1.Pracownik p2 = new Pracownik1.Pracownik(175,3456.6,"Zielone",5,"Technik");
 
+        Pracownik1 k1 = new Kierownik(169,5675.23,9,"Piwne","Kierownik");
+        Pracownik1 k2 = new Kierownik(177,6435.23,11,"Amalgatowe","Kierownik");
+
+        listaPracownikow.add(p1);
+        listaPracownikow.add(p2);
+        listaPracownikow.add(k1);
+        listaPracownikow.add(k2);
+
+        for (int i = 0; i < 1; i++) {
+            System.out.println(listaPracownikow);
+        }
+
+        /*listaPracownikow.add((Pracownik1.Pracownik)k1);
+        listaPracownikow.add((Pracownik1.Pracownik)k2);*/
+
+
+   /*     System.out.println(k1);
+        System.out.println(k2);
+
         System.out.println(s1);
         System.out.println(s2);
         System.out.println(p1);
-        System.out.println(p2);
+        System.out.println(p2);*/
 
     }
 }

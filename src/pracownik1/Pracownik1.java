@@ -92,10 +92,10 @@ public interface Pracownik1 extends Czlowiek1 {
         @Override
         public String toString() {
             return "Pracownik{" +
-                    "Wzrost =" + getHeight() +
-                    ", Wypłata =" + getSalary() +
-                    ", Kolor oczu ='" + getEyeColor() + '\'' +
-                    ", Doświadczenie ='" + getExperience()+" "+"lat" + '\'' +
+                    "Wzrost = " + getHeight() +
+                    ", Wypłata = " + getSalary() +
+                    ", Kolor oczu = '" + getEyeColor() + '\'' +
+                    ", Doświadczenie = '" + getExperience()+" "+"lat" + '\'' +
                     ", Stanowisko =  '" + getPosition() + '\'' +
                     '}'+"\n";
         }
